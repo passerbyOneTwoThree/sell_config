@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: order
+    name: gatewey
   jackson:
     default-property-inclusion: non_null  #如果返回值为null，则不返回
   datasource:
@@ -12,7 +12,7 @@ spring:
   jpa:
     show-sql: true
 server:
-  port: 8082
+  port: 9000
 
 
 
