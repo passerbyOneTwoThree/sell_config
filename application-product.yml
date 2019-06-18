@@ -2,6 +2,11 @@
 spring:
   application:
     name: product
+  rabbitmq:
+    host: 192.168.27.140
+    port: 5672
+    password: guest
+    username: guest
   jackson:
     default-property-inclusion: non_null  #如果返回值为null，则不返回
   datasource:
