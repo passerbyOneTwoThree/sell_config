@@ -13,6 +13,17 @@ spring:
     show-sql: true
 server:
   port: 9000
+  
+zuul:
+  routes:  #配置自定义的接口
+     myProduct:
+       path: /myProduct/**  #指定请求路径
+       serviceId: product  #指定服务名称
+       sensitiveHeaders:  #敏感头部，设置为空，否则将会过滤到cookie
+
+  ignored-patterns:  #排除指定请求路径，例：
+    - /**/test/
+
 
 
 
